@@ -39,6 +39,15 @@ git push --delete <remote-name> <branch-name>
 ```
 git clone <url>
 ```
+### Xóa commit vừa ms push lên github
+-chú ý: chưa ai full code về hoặc push commit mới lên để tránh sự hỗn loạn
+```
+# Trở về commit trước đó
+git reset HEAD~1
+
+# Force push lại toàn bộ commit trước đó
+git push --force
+```
 ### Git fetch
 - Tải xuống các thay đổi / cập nhật mới nhất trên remote repo về local
 - Những dữa liệu tải về sẽ chưa áp dụng ngay cho local( chúng ta có thể tra cứu các thông tin ví dụ như các branch khác branch default)
